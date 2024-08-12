@@ -1,0 +1,89 @@
+INFO  @ Sat, 06 Aug 2022 00:21:08: 
+# Command line: callpeak -t HB_Lmo2_aligned_sorted_noDups.bam -c HB_input_aligned_sorted_noDups.bam -f BAM -g mm -n lmo2 -q 0.05 --keep-dup auto -B --trackline
+# ARGUMENTS LIST:
+# name = lmo2
+# format = BAM
+# ChIP-seq file = ['HB_Lmo2_aligned_sorted_noDups.bam']
+# control file = ['HB_input_aligned_sorted_noDups.bam']
+# effective genome size = 1.87e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 5.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+ 
+INFO  @ Sat, 06 Aug 2022 00:21:08: #1 read tag files... 
+INFO  @ Sat, 06 Aug 2022 00:21:08: #1 read treatment tags... 
+INFO  @ Sat, 06 Aug 2022 00:21:10:  1000000 
+INFO  @ Sat, 06 Aug 2022 00:21:12:  2000000 
+INFO  @ Sat, 06 Aug 2022 00:21:13:  3000000 
+INFO  @ Sat, 06 Aug 2022 00:21:15:  4000000 
+INFO  @ Sat, 06 Aug 2022 00:21:17:  5000000 
+INFO  @ Sat, 06 Aug 2022 00:21:19:  6000000 
+INFO  @ Sat, 06 Aug 2022 00:21:20:  7000000 
+INFO  @ Sat, 06 Aug 2022 00:21:22:  8000000 
+INFO  @ Sat, 06 Aug 2022 00:21:24:  9000000 
+INFO  @ Sat, 06 Aug 2022 00:21:26:  10000000 
+INFO  @ Sat, 06 Aug 2022 00:21:28:  11000000 
+INFO  @ Sat, 06 Aug 2022 00:21:29:  12000000 
+INFO  @ Sat, 06 Aug 2022 00:21:59: 12772688 reads have been read. 
+INFO  @ Sat, 06 Aug 2022 00:21:59: #1.2 read input tags... 
+INFO  @ Sat, 06 Aug 2022 00:22:00:  1000000 
+INFO  @ Sat, 06 Aug 2022 00:22:02:  2000000 
+INFO  @ Sat, 06 Aug 2022 00:22:04:  3000000 
+INFO  @ Sat, 06 Aug 2022 00:22:06:  4000000 
+INFO  @ Sat, 06 Aug 2022 00:22:07:  5000000 
+INFO  @ Sat, 06 Aug 2022 00:22:09:  6000000 
+INFO  @ Sat, 06 Aug 2022 00:22:11:  7000000 
+INFO  @ Sat, 06 Aug 2022 00:22:12:  8000000 
+INFO  @ Sat, 06 Aug 2022 00:22:14:  9000000 
+INFO  @ Sat, 06 Aug 2022 00:22:16:  10000000 
+INFO  @ Sat, 06 Aug 2022 00:22:18:  11000000 
+INFO  @ Sat, 06 Aug 2022 00:22:19:  12000000 
+INFO  @ Sat, 06 Aug 2022 00:22:21:  13000000 
+INFO  @ Sat, 06 Aug 2022 00:22:23:  14000000 
+INFO  @ Sat, 06 Aug 2022 00:22:24:  15000000 
+INFO  @ Sat, 06 Aug 2022 00:22:26:  16000000 
+INFO  @ Sat, 06 Aug 2022 00:22:28:  17000000 
+INFO  @ Sat, 06 Aug 2022 00:22:30:  18000000 
+INFO  @ Sat, 06 Aug 2022 00:22:32: 18689132 reads have been read. 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1 tag size is determined as 37 bps 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1 tag size = 37.0 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  total tags in treatment: 12772688 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1 calculate max duplicate tags in single position based on binomial distribution... 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  max_dup_tags based on binomial = 2 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1 filter out redundant tags at the same location and the same strand by allowing at most 2 tag(s) 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  tags after filtering in treatment: 12767480 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  Redundant rate of treatment: 0.00 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  total tags in control: 18689132 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  for control, calculate max duplicate tags in single position based on binomial distribution... 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  max_dup_tags based on binomial = 2 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1 filter out redundant tags at the same location and the same strand by allowing at most 2 tag(s) 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  tags after filtering in control: 18683489 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1  Redundant rate of control: 0.00 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #1 finished! 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #2 Build Peak Model... 
+INFO  @ Sat, 06 Aug 2022 00:22:32: #2 looking for paired plus/minus strand peaks... 
+INFO  @ Sat, 06 Aug 2022 00:22:33: #2 number of paired peaks: 3091 
+INFO  @ Sat, 06 Aug 2022 00:22:33: start model_add_line... 
+INFO  @ Sat, 06 Aug 2022 00:22:33: start X-correlation... 
+INFO  @ Sat, 06 Aug 2022 00:22:33: end of X-cor 
+INFO  @ Sat, 06 Aug 2022 00:22:33: #2 finished! 
+INFO  @ Sat, 06 Aug 2022 00:22:33: #2 predicted fragment length is 144 bps 
+INFO  @ Sat, 06 Aug 2022 00:22:33: #2 alternative fragment length(s) may be 41,144 bps 
+INFO  @ Sat, 06 Aug 2022 00:22:33: #2.2 Generate R script for model : lmo2_model.r 
+INFO  @ Sat, 06 Aug 2022 00:22:33: #3 Call peaks... 
+INFO  @ Sat, 06 Aug 2022 00:22:33: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Sat, 06 Aug 2022 00:23:29: #3 In the peak calling step, the following will be performed simultaneously: 
+INFO  @ Sat, 06 Aug 2022 00:23:29: #3   Write bedGraph files for treatment pileup (after scaling if necessary)... lmo2_treat_pileup.bdg 
+INFO  @ Sat, 06 Aug 2022 00:23:29: #3   Write bedGraph files for control lambda (after scaling if necessary)... lmo2_control_lambda.bdg 
+INFO  @ Sat, 06 Aug 2022 00:23:29: #3   Pileup will be based on sequencing depth in treatment. 
+INFO  @ Sat, 06 Aug 2022 00:23:29: #3 Call peaks for each chromosome... 
+INFO  @ Sat, 06 Aug 2022 00:24:17: #4 Write output xls file... lmo2_peaks.xls 
+INFO  @ Sat, 06 Aug 2022 00:24:17: #4 Write peak in narrowPeak format file... lmo2_peaks.narrowPeak 
+INFO  @ Sat, 06 Aug 2022 00:24:17: #4 Write summits bed file... lmo2_summits.bed 
+INFO  @ Sat, 06 Aug 2022 00:24:17: Done! 

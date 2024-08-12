@@ -1,0 +1,88 @@
+INFO  @ Sat, 06 Aug 2022 00:21:18: 
+# Command line: callpeak -t HB_Tal1_aligned_sorted_noDups.bam -c HB_input_aligned_sorted_noDups.bam -f BAM -g mm -n tal1 -q 0.05 --keep-dup auto -B --trackline
+# ARGUMENTS LIST:
+# name = tal1
+# format = BAM
+# ChIP-seq file = ['HB_Tal1_aligned_sorted_noDups.bam']
+# control file = ['HB_input_aligned_sorted_noDups.bam']
+# effective genome size = 1.87e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 5.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+ 
+INFO  @ Sat, 06 Aug 2022 00:21:18: #1 read tag files... 
+INFO  @ Sat, 06 Aug 2022 00:21:18: #1 read treatment tags... 
+INFO  @ Sat, 06 Aug 2022 00:21:19:  1000000 
+INFO  @ Sat, 06 Aug 2022 00:21:21:  2000000 
+INFO  @ Sat, 06 Aug 2022 00:21:23:  3000000 
+INFO  @ Sat, 06 Aug 2022 00:21:25:  4000000 
+INFO  @ Sat, 06 Aug 2022 00:21:27:  5000000 
+INFO  @ Sat, 06 Aug 2022 00:21:28:  6000000 
+INFO  @ Sat, 06 Aug 2022 00:21:30:  7000000 
+INFO  @ Sat, 06 Aug 2022 00:21:32:  8000000 
+INFO  @ Sat, 06 Aug 2022 00:22:07: 8668996 reads have been read. 
+INFO  @ Sat, 06 Aug 2022 00:22:07: #1.2 read input tags... 
+INFO  @ Sat, 06 Aug 2022 00:22:09:  1000000 
+INFO  @ Sat, 06 Aug 2022 00:22:11:  2000000 
+INFO  @ Sat, 06 Aug 2022 00:22:12:  3000000 
+INFO  @ Sat, 06 Aug 2022 00:22:14:  4000000 
+INFO  @ Sat, 06 Aug 2022 00:22:16:  5000000 
+INFO  @ Sat, 06 Aug 2022 00:22:18:  6000000 
+INFO  @ Sat, 06 Aug 2022 00:22:19:  7000000 
+INFO  @ Sat, 06 Aug 2022 00:22:21:  8000000 
+INFO  @ Sat, 06 Aug 2022 00:22:23:  9000000 
+INFO  @ Sat, 06 Aug 2022 00:22:24:  10000000 
+INFO  @ Sat, 06 Aug 2022 00:22:26:  11000000 
+INFO  @ Sat, 06 Aug 2022 00:22:28:  12000000 
+INFO  @ Sat, 06 Aug 2022 00:22:30:  13000000 
+INFO  @ Sat, 06 Aug 2022 00:22:31:  14000000 
+INFO  @ Sat, 06 Aug 2022 00:22:33:  15000000 
+INFO  @ Sat, 06 Aug 2022 00:22:35:  16000000 
+INFO  @ Sat, 06 Aug 2022 00:22:36:  17000000 
+INFO  @ Sat, 06 Aug 2022 00:22:38:  18000000 
+INFO  @ Sat, 06 Aug 2022 00:22:40: 18689132 reads have been read. 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1 tag size is determined as 37 bps 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1 tag size = 37.0 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  total tags in treatment: 8668996 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1 calculate max duplicate tags in single position based on binomial distribution... 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  max_dup_tags based on binomial = 2 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1 filter out redundant tags at the same location and the same strand by allowing at most 2 tag(s) 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  tags after filtering in treatment: 8661295 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  Redundant rate of treatment: 0.00 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  total tags in control: 18689132 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  for control, calculate max duplicate tags in single position based on binomial distribution... 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  max_dup_tags based on binomial = 2 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1 filter out redundant tags at the same location and the same strand by allowing at most 2 tag(s) 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  tags after filtering in control: 18683489 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1  Redundant rate of control: 0.00 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #1 finished! 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #2 Build Peak Model... 
+INFO  @ Sat, 06 Aug 2022 00:22:40: #2 looking for paired plus/minus strand peaks... 
+INFO  @ Sat, 06 Aug 2022 00:22:41: #2 number of paired peaks: 4593 
+INFO  @ Sat, 06 Aug 2022 00:22:41: start model_add_line... 
+INFO  @ Sat, 06 Aug 2022 00:22:42: start X-correlation... 
+INFO  @ Sat, 06 Aug 2022 00:22:42: end of X-cor 
+INFO  @ Sat, 06 Aug 2022 00:22:42: #2 finished! 
+INFO  @ Sat, 06 Aug 2022 00:22:42: #2 predicted fragment length is 34 bps 
+INFO  @ Sat, 06 Aug 2022 00:22:42: #2 alternative fragment length(s) may be 34,105,496 bps 
+INFO  @ Sat, 06 Aug 2022 00:22:42: #2.2 Generate R script for model : tal1_model.r 
+WARNING @ Sat, 06 Aug 2022 00:22:42: #2 Since the d (34) calculated from paired-peaks are smaller than 2*tag length, it may be influenced by unknown sequencing problem! 
+WARNING @ Sat, 06 Aug 2022 00:22:42: #2 You may need to consider one of the other alternative d(s): 34,105,496 
+WARNING @ Sat, 06 Aug 2022 00:22:42: #2 You can restart the process with --nomodel --extsize XXX with your choice or an arbitrary number. Nontheless, MACS will continute computing. 
+INFO  @ Sat, 06 Aug 2022 00:22:42: #3 Call peaks... 
+INFO  @ Sat, 06 Aug 2022 00:22:42: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Sat, 06 Aug 2022 00:23:32: #3 In the peak calling step, the following will be performed simultaneously: 
+INFO  @ Sat, 06 Aug 2022 00:23:32: #3   Write bedGraph files for treatment pileup (after scaling if necessary)... tal1_treat_pileup.bdg 
+INFO  @ Sat, 06 Aug 2022 00:23:32: #3   Write bedGraph files for control lambda (after scaling if necessary)... tal1_control_lambda.bdg 
+INFO  @ Sat, 06 Aug 2022 00:23:32: #3   Pileup will be based on sequencing depth in treatment. 
+INFO  @ Sat, 06 Aug 2022 00:23:32: #3 Call peaks for each chromosome... 
+INFO  @ Sat, 06 Aug 2022 00:24:21: #4 Write output xls file... tal1_peaks.xls 
+INFO  @ Sat, 06 Aug 2022 00:24:21: #4 Write peak in narrowPeak format file... tal1_peaks.narrowPeak 
+INFO  @ Sat, 06 Aug 2022 00:24:21: #4 Write summits bed file... tal1_summits.bed 
+INFO  @ Sat, 06 Aug 2022 00:24:21: Done! 
